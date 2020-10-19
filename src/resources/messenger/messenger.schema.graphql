@@ -1,0 +1,16 @@
+type Message {
+    _id: String!
+    message: String!
+}
+type Query {
+    user_message_to_bot(_id: String, message: String): Message
+    get_user_messages(_id: String): String!
+}
+type CreateUserInput {
+    email: String!
+    password: String!
+}
+
+type CreateUserPayload {
+    user: User
+}
