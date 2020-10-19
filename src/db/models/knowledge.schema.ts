@@ -14,8 +14,8 @@ const KnowledgeSchema: Schema = new Schema({
 export interface IKnowledge extends Document{
     subject: String;
     summary: String;
-    inputs: {};
-    output: {};
+    inputs: [];
+    output: [];
     permission: String;
     bot_function: String;
     calls: Number;
